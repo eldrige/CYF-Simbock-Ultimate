@@ -1,0 +1,31 @@
+:root{
+    /* my variables */
+}
+.showcase{
+    background: url('./assets/images/Rally-Images/IMG-20200216-WA0024.jpg') no-repeat center center/cover;
+    width: 100%;
+    height: 80vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.showcase::after, .showcase::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background: rgba(0, 0, 0, 0.3);
+    /* here m supposed to use an alpha of 0.6, but will put it when i get the actaul image */
+    /* box-shadow: inset 120px, 100px 250px #000; */
+    /* box shadow increases the density of the shadow */
+}
+h1, h2{
+    color: #fff;
+    z-index: 5;
+}
+
