@@ -7,3 +7,4 @@
 7. work on the gallery, here I will make bootstrap cards for the current exco, and a nice responsive image grid for the groups pictures
 8.// still thinking of a page to include the different songs
 9.finally the contact form and the support us footer
+10. use defaults colors such as blue red balck and white as well yellow
