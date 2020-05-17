@@ -45,6 +45,12 @@ h1, h2{
     flex-wrap: wrap;
     padding: 0 4px;
   }
+  .footer{
+    background: #343a40;
+  }
+  .footer p{
+    color: rgba(255, 255, 255, 0.75);
+  }
   
   /* Create four equal columns that sits next to each other */
   .column {

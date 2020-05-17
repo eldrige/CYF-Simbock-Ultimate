@@ -12,12 +12,13 @@
     <link rel="stylesheet" href="./assets/node_modules/bs4/bootstrap.css" />
     <script src="./assets/node_modules/bs4/bootstrap.js" defer></script>
     <link rel="stylesheet" href="./main.css" />
+
   </head>
   <body>
     <!-- navbar should be fixed -->
     <header class="">
       <!-- navbar start -->
-      <nav class="navbar navbar-expand-md bg-dark navbar-dark">
+      <nav class="navbar navbar-expand-md bg-dark navbar-dark fixed-top">
         <!-- Brand -->
         <a class="navbar-brand" href="#">CYF</a>
 
@@ -56,7 +57,7 @@
       </div>
       <!-- jumbotron end -->
     </header>
-    <div class="container">
+    <div class="container mb-4">
       <!-- history of the movement -->
       <section class="container" id="history">
         <h2 class="text-center mt-3 heading">Brief History of the movement</h2>
@@ -98,7 +99,7 @@
                <img src="./assets/images/colors/Solid_white_bordered.png" class="rounded-circle color">
              </div>
              <div class="card-footer">
-               Red represents the blood of the early martyrs. It also signifies the coming of the holy spirit
+               White represents light and purity.
              </div>
            </div>
          </div>
@@ -109,7 +110,7 @@
                <img src="./assets/images/colors/Solid_black.png" class="rounded-circle color">
              </div>
              <div class="card-footer">
-               Red represents the blood of the early martyrs. It also signifies the coming of the holy spirit
+               It represents darkness. CYf members are thus required to shine light into the dark world stained by sin.
              </div>
            </div>
          </div>
@@ -120,7 +121,7 @@
                <img src="./assets/images/colors/Solid_blue.png" class="rounded-circle color">
              </div>
              <div class="card-footer">
-               Red represents the blood of the early martyrs. It also signifies the coming of the holy spirit
+               It represents the sky, which is a sign of the unversalism of the Christian gospel.
              </div>
            </div>
          </div>
@@ -137,14 +138,55 @@
          </div>
        </div>
        <!-- colors end -->
-       </section>  
-       <!-- MMaps -->
-       <section class="mmaps" id="mmaps">
-         <h2 class='heading text-center'>MMAPS</h2>
-         <h2>Contrary to what you might be thinkinh, mmaps here does not refer to the ground map,or gird</h2>
+       </section> 
+       <section class="maps" id="maps">
+         <h2 class="heading text-center">CYF MMAPS</h2>
+         <p>Contrary to a world map, or a cart, the CYF mmaps is an acronym which stands for Motto,
+            Membership, Aim, Promise and Salutation.</p>
+            <h3>Motto</h3>
+            <p>For God has already placed Jesus Christ as the one and only foundation
+              and no other foundation can be laid. <b>1st Corinth 3:11</b> 
+            </p>
+            <h3>Aim</h3>
+            <p>The AIM of the Christian Youth Fellowship is to bring together Youths
+              who want to serve Jesus Christ. The movement wants to develop among its members
+              a sense of responsiblity towards the church and her mission to the world. <b>Mt 28:18-20</b>
+            </p>
+            <h3>Promise</h3>
+            <p> We promise to seek under the leadership of Christ and in Fellowshipwith one another
+              the will of God for ourselves, for the church and for the world and to do it. <b>James 2:14-17</b>
+            </p>
+            <h3></h3>
+            <p></p>
+            <h3></h3>
+            <p></p>
        </section>
+    </div>
+    <!-- footer + copyright -->
+      <section class="footer bg-dark text-white p-3 mx-10" id="footer">
+        peldrige8@gmail.com</br>
+        Yaounde, Cameroon</br>
+        CYF Simbok-Mendong</br>
+        <p class="text-left">&copy;2020: All rights reserved</p>
+      </section>
+      
     <!-- bootstrap srcipts -->
     <script src="./assets/node_modules/popper/popper.js"></script>
     <script src="./assets/node_modules/jquery/jquery.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function(){
+      $('a[href^="#"]').on('click',function (e) {e.preventDefault();
+  
+        var target = this.hash,
+        $target = $(target);
+  
+        $('html, body').stop().animate({
+            'scrollTop': $target.offset().top
+        }, 900, 'swing', function () {
+            window.location.hash = target;
+        });
+    });
+  });
+  </script>
   </body>
 </html>
