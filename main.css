@@ -1,83 +1,152 @@
-:root{
-    /* my variables */
-    --gradient: linear-gradient(45.34deg, #EA52F8 5.66%, #0066FF 94.35%);
-    --yo:background:linear-gradient(45deg, rgba(188, 164, 6, 0.5) 0%, rgba(188, 164, 6, 0.5) 12.5%,rgba(165, 158, 18, 0.5) 12.5%, rgba(165, 158, 18, 0.5) 25%,rgba(142, 152, 31, 0.5) 25%, rgba(142, 152, 31, 0.5) 37.5%,rgba(119, 146, 43, 0.5) 37.5%, rgba(119, 146, 43, 0.5) 50%,rgba(96, 140, 56, 0.5) 50%, rgba(96, 140, 56, 0.5) 62.5%,rgba(73, 134, 68, 0.5) 62.5%, rgba(73, 134, 68, 0.5) 75%,rgba(50, 128, 81, 0.5) 75%, rgba(50, 128, 81, 0.5) 87.5%,rgba(27, 122, 93, 0.5) 87.5%, rgba(27, 122, 93, 0.5) 100%),linear-gradient(135deg, rgb(197, 183, 45) 0%, rgb(197, 183, 45) 12.5%,rgb(177, 167, 44) 12.5%, rgb(177, 167, 44) 25%,rgb(158, 152, 44) 25%, rgb(158, 152, 44) 37.5%,rgb(138, 136, 43) 37.5%, rgb(138, 136, 43) 50%,rgb(118, 121, 42) 50%, rgb(118, 121, 42) 62.5%,rgb(98, 105, 41) 62.5%, rgb(98, 105, 41) 75%,rgb(79, 90, 41) 75%, rgb(79, 90, 41) 87.5%,rgb(59, 74, 40) 87.5%, rgb(59, 74, 40) 100%);
+:root {
+  /* my variables */
+  --gradient: linear-gradient(45.34deg, #ea52f8 5.66%, #0066ff 94.35%);
+  --yo: linear-gradient(
+      45deg,
+      rgba(188, 164, 6, 0.5) 0%,
+      rgba(188, 164, 6, 0.5) 12.5%,
+      rgba(165, 158, 18, 0.5) 12.5%,
+      rgba(165, 158, 18, 0.5) 25%,
+      rgba(142, 152, 31, 0.5) 25%,
+      rgba(142, 152, 31, 0.5) 37.5%,
+      rgba(119, 146, 43, 0.5) 37.5%,
+      rgba(119, 146, 43, 0.5) 50%,
+      rgba(96, 140, 56, 0.5) 50%,
+      rgba(96, 140, 56, 0.5) 62.5%,
+      rgba(73, 134, 68, 0.5) 62.5%,
+      rgba(73, 134, 68, 0.5) 75%,
+      rgba(50, 128, 81, 0.5) 75%,
+      rgba(50, 128, 81, 0.5) 87.5%,
+      rgba(27, 122, 93, 0.5) 87.5%,
+      rgba(27, 122, 93, 0.5) 100%
+    ),
+    linear-gradient(
+      135deg,
+      rgb(197, 183, 45) 0%,
+      rgb(197, 183, 45) 12.5%,
+      rgb(177, 167, 44) 12.5%,
+      rgb(177, 167, 44) 25%,
+      rgb(158, 152, 44) 25%,
+      rgb(158, 152, 44) 37.5%,
+      rgb(138, 136, 43) 37.5%,
+      rgb(138, 136, 43) 50%,
+      rgb(118, 121, 42) 50%,
+      rgb(118, 121, 42) 62.5%,
+      rgb(98, 105, 41) 62.5%,
+      rgb(98, 105, 41) 75%,
+      rgb(79, 90, 41) 75%,
+      rgb(79, 90, 41) 87.5%,
+      rgb(59, 74, 40) 87.5%,
+      rgb(59, 74, 40) 100%
+    );
 }
-.showcase{
-    background: url('./assets/images/Rally-Images/IMG-20200216-WA0024.jpg') no-repeat center center/cover;
-    width: 100%;
-    height: 75vh;
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
+/* HERO_SECTION */
+.showcase {
+  background: url("./assets/images/Rally-Images/IMG-20200216-WA0024.jpg")
+    no-repeat center center/cover;
+  width: 100%;
+  height: 75vh;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
-.showcase::after, .showcase::before{
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 1;
-    background: rgba(0, 0, 0, 0.3);
-    /* here m supposed to use an alpha of 0.6, but will put it when i get the actaul image */
-    /* box-shadow: inset 120px, 100px 250px #000; */
-    /* box shadow increases the density of the shadow */
+.showcase::after,
+.showcase::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  background: rgba(0, 0, 0, 0.3);
+  /* here m supposed to use an alpha of 0.6, but will put it when i get the actaul image */
+  /* box-shadow: inset 120px, 100px 250px #000; */
+  /* box shadow increases the density of the shadow */
 }
-h1, h2{
-    z-index: 5;
+/* TYPOGRAPHY */
+section p {
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
-.heading{
- background: linear-gradient( 45.34deg, #EA52F8 5.66%, #0066FF 94.35%);
- -webkit-background-clip: text;
- -moz-background-clip: text ;
- background-clip: text;
- -webkit-text-fill-color: transparent;
+h1,
+h2 {
+  z-index: 5;
 }
-.color{
-    width: 200px;
-    height: 200px;
+/* LINEAR_GRADIENTS */
+.heading {
+  background: linear-gradient(45.34deg, #ea52f8 5.66%, #0066ff 94.35%);
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
-.rowe {
-    display: flex;
-    flex-wrap: wrap;
-    padding: 0 4px;
+.color {
+  width: 200px;
+  height: 200px;
+}
+/* FOOTer-STYLING */
+.footer {
+  background: #343a40;
+}
+.footer p {
+  color: rgba(255, 255, 255, 0.75);
+}
+
+/* GRID STYLING  */
+.horizontal {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.vertical {
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+.vertical img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+/* MEDIA_QIERIES */
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .vertical {
+    flex: 50%;
+    max-width: 50%;
   }
-  .footer{
-    background: #343a40;
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .vertical{
+    flex: 100%;
+    max-width: 100%;
   }
-  .footer p{
-    color: rgba(255, 255, 255, 0.75);
-  }
-  
-  /* Create four equal columns that sits next to each other */
-  .column {
-    flex: 25%;
-    max-width: 25%;
-    padding: 0 4px;
-  }
-  
-  .column img {
-    margin-top: 8px;
-    vertical-align: middle;
-    width: 100%;
-  }
-  
-  /* Responsive layout - makes a two column-layout instead of four columns */
-  @media screen and (max-width: 800px) {
-    .column {
-      flex: 50%;
-      max-width: 50%;
-    }
-  }
-  
-  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-  @media screen and (max-width: 600px) {
-    .column {
-      flex: 100%;
-      max-width: 100%;
-    }
-  }
+}
+/* tabulate up button */
+#up{
+  position: absolute;
+  width: 5rem;
+  height: 5rem;
+  background-color: #eee;
+  top: -2.5rem;
+  right: 5rem;
+  border-radius: 100%;
+  right: 5rem;
+  display: flex;
+  animation: pulse 2s infinite;
+  cursor: pointer;
+}
+.btn{
+  position: relative;
+}
 
