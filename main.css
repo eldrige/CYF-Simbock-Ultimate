@@ -132,8 +132,15 @@ h2 {
     max-width: 100%;
   }
 }
-/* tabulate up button */
-#up{
+/* scroll up button styling */
+.copyright{
+width: 100%;
+padding: 2rem 0;
+text-align: center;
+background-color: #16162d;
+position: relative;
+}
+.up{
   position: absolute;
   width: 5rem;
   height: 5rem;
@@ -146,7 +153,8 @@ h2 {
   animation: pulse 2s infinite;
   cursor: pointer;
 }
-.btn{
-  position: relative;
+.up i{
+  color: #16162d;
+font-size: 2rem;
+margin: auto;
 }
-

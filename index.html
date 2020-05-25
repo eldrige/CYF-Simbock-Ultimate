@@ -11,6 +11,7 @@
     />
     <link rel="stylesheet" href="./assets/node_modules/bs4/bootstrap.css" />
     <script src="./assets/node_modules/bs4/bootstrap.js" defer></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="./main.css" />
 
   </head>
@@ -42,7 +43,7 @@
               <a class="nav-link" href="./gallery.html">Gallery</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Misc</a>
+              <a class="nav-link" href="#">Videos</a>
             </li>
     
           </ul>
@@ -164,17 +165,17 @@
        </section>
     </div>
     <!-- footer + copyright -->
-      <section class="footer bg-dark text-white p-3 mx-10" id="footer">
-        <div class="btn">
-        <div class="up" id="up">
-          <i class="fas fa-chevron-up"></i>
-        </div>
-      </div>
+    <div class="up" id="up">
+      <i class="fas fa-chevron-up"></i>
+    </div>
+
+      <section class="footer bg-dark text-white p-5 mx-10" id="footer">
+        
       <div class="details">
         peldrige8@gmail.com</br>
         Yaounde, Cameroon</br>
         CYF Simbok-Mendong</br>
-        <p class="text-left">&copy;2020: All rights reserved</p>
+        <p class="text-center">&copy;2020: All rights reserved</p>
       </div>
       </section>
       
@@ -182,19 +183,7 @@
     <script src="./assets/node_modules/popper/popper.js"></script>
     <script src="./assets/node_modules/jquery/jquery.js"></script>
     <script type="text/javascript">
-      $(document).ready(function(){
-      $('a[href^="#"]').on('click',function (e) {e.preventDefault();
-  
-        var target = this.hash,
-        $target = $(target);
-  
-        $('html, body').stop().animate({
-            'scrollTop': $target.offset().top
-        }, 900, 'swing', function () {
-            window.location.hash = target;
-        });
-    });
-  });
+
   </script>
   </body>
 </html>
