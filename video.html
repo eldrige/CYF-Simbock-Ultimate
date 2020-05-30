@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video</title>
+    <link rel="stylesheet" href="./assets/node_modules/bs4/bootstrap.css" />
+    <script src="./assets/node_modules/bs4/bootstrap.js" defer></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./main.css" />
+    <script src="./main.js" defer></script>
+</head>
+<body>
+    <!-- header -->
+    <header class="">
+        <!-- navbar start -->
+        <nav class="navbar navbar-expand-md bg-dark navbar-dark fixed-top">
+          <!-- Brand -->
+          <a class="navbar-brand" href="#">CYF</a>
+  
+          <!-- Toggler/collapsibe Button -->
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#collapsibleNavbar"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+  
+          <!-- Navbar links -->
+          <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="./index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./gallery.html">Gallery</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./video.html">Videos</a>
+              </li>
+      
+            </ul>
+          </div>
+        </nav>
+    <div class="container-fluid">
+    <video controls loop preload poster="img/kitchen.png" width="900">
+        <source src="./assets/video/VID-20200216-WA0010.mp4"><!-- Serve first for iPad -->
+      </video>
+    </div>
+</body>
+</html>
