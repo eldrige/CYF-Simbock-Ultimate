@@ -8,3 +8,4 @@
 8.// still thinking of a page to include the different songs
 9.finally the contact form and the support us footer
 10. use defaults colors such as blue red balck and white as well yellow
+11. remove all local bottstrap and font awesome, just add the cdn's online, so as to increase loadspeed
